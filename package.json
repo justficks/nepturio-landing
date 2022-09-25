@@ -1,0 +1,47 @@
+{
+  "name": "nepturio",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite --host",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@mdi/font": "5.9.55",
+    "anime": "^0.1.2",
+    "animejs": "^3.2.1",
+    "mitt": "^3.0.0",
+    "pinia": "^2.0.22",
+    "roboto-fontface": "*",
+    "url": "^0.11.0",
+    "vue": "^3.2.37",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/animejs": "^3.1.5",
+    "@types/webfontloader": "^1.0.0",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.5",
+    "vue-tsc": "^0.40.4"
+  },
+  "type": "module",
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120,
+    "arrowParens": "avoid"
+  }
+}
