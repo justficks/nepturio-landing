@@ -1,12 +1,6 @@
 <template>
   <div>
-    <v-dialog
-      activator="parent"
-      max-width="350px"
-      scrollable
-      @click:outside="closeDialog"
-      v-model="dialog"
-    >
+    <v-dialog activator="parent" scrollable @click:outside="closeDialog" v-model="dialog">
       <v-card class="d-flex justify-center align-center flex-column pa-2 w-100">
         <img :src="`${currentPortfolio.img}`" class="w-100" />
 
@@ -30,20 +24,20 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from '@vue/reactivity';
-import { usePortfolioStore } from '../../store/portfolio';
+import { computed } from '@vue/reactivity'
+import { usePortfolioStore } from '../../store/portfolio'
 
-const emits = defineEmits(['closeEmitDialog']);
+const emits = defineEmits(['closeEmitDialog'])
 const props = defineProps({
   dialog: { type: Boolean, default: false },
-});
+})
 
-const store = usePortfolioStore();
-const currentPortfolio = computed(() => store.currentPortfolio);
+const store = usePortfolioStore()
+const currentPortfolio = computed(() => store.currentPortfolio)
 
 const closeDialog = () => {
-  emits('closeEmitDialog');
-};
+  emits('closeEmitDialog')
+}
 </script>
 
 <style scoped></style>
